@@ -1,30 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunset Photography</title>
+    <!--CSS FILE ADDED -->
+    <link rel="stylesheet" href="image_file.css" />
+  </head>
+  <body>
+    <div class="gallery">
+      <img
+        src="Gallery/Spic1.jpg"
+        alt="Sunset_photo 1"
+        onclick="openModal(this.src)"
+      />
+      <img
+        src="Gallery/Spic2.jpg"
+        alt="Sunset_photo 2"
+        onclick="openModal(this.src)"
+      />
+      <img
+        src="Gallery/Spic3.jpg"
+        alt="Sunset_photo 3"
+        onclick="openModal(this.src)"
+      />
+      <img
+        src="Gallery/Spic4.jpg"
+        alt="Sunset_photo 4"
+        onclick="openModal(this.src)"
+      />
+      <img
+        src="Gallery/Spic5.jpg"
+        alt="Sunset_photo 5"
+        onclick="openModal(this.src)"
+      />
+      <img
+        src="Gallery/Spic6.jpg"
+        alt="Sunset_photo 6"
+        onclick="openModal(this.src)"
+      />
+      <img
+        src="Gallery/Spic7.jpg"
+        alt="Sunset_photo 7"
+        onclick="openModal(this.src)"
+      />
+      <img
+        src="Gallery/Spic8.jpg"
+        alt="Sunset_photo 8"
+        onclick="openModal(this.src)"
+      />
+    </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunset_Photography</title>
-</head>
-
-<body bgcolor=" background-image: var(--bs-gradient);.">
-    <img src="F:\Bootstrap\My_web_framework\Gallery/Spic1.jpg" height="300" align="left" border="5"
-        style="margin: 10px;">
-    <img src="F:\Bootstrap\My_web_framework\Gallery/Spic2.jpg" height="300" align="left" border="5"
-        style="margin: 10px;">
-    <img src="F:\Bootstrap\My_web_framework\Gallery/Spic3.jpg" height="300" align="left" border="5"
-        style="margin: 10px;">
-    <img src="F:\Bootstrap\My_web_framework\Gallery/Spic4.jpg" height="300" align="left" border="5"
-        style="margin: 10px;">
-    <img src="F:\Bootstrap\My_web_framework\Gallery/Spic5.jpg" height="300" align="left" border="5"
-        style="margin: 10px;">
-    <img src="F:\Bootstrap\My_web_framework\Gallery/Spic6.jpg" height="300" align="left" border="5"
-        style="margin: 10px;">
-    <img src="F:\Bootstrap\My_web_framework\Gallery/Spic7.jpg" height="300" align="left" border="5"
-        style="margin: 10px;">
-    <img src="F:\Bootstrap\My_web_framework\Gallery/Spic8.jpg" height="300" align="left" border="5"
-        style="margin: 10px;">
-</body>
-</body>
-
+    <div class="modal" id="imgModal">
+      <span class="close" id="closeButton">&times;</span>
+      <img id="modalImage" src="" alt="Full view" />
+    </div>
+    <!--JS file adde-->
+    <script src="image_file_logic.js"></script>
+  </body>
 </html>
