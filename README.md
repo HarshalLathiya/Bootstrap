@@ -33,3 +33,22 @@ My_web_framework/
 ├── my_website.html # Main or additional HTML page
 ├── style.css # Main CSS stylesheet
 └── Sunset_folder2.html # Sunset themed page
+
+
+
+## How to Use
+1. Clone or download this repository.
+2. Open any `.html` files in a modern web browser.
+3. Customize and expand the project by adding new components or styles.
+
+## Live Demo
+Visit the hosted project here:  
+[https://harshallathiya.github.io/Bootstrap/](https://harshallathiya.github.io/Bootstrap/)
+
+## Author
+Harshal Lathiya  
+BCA Student | Web Developer | Photographer  
+
+---
+
+Feel free to customize or expand this README based on your needs! Would you like me to help you generate it as a file?
