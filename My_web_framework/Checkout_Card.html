@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payment Card</title>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 300px;
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    .price {
+      font-size: 28px;
+      margin: 10px 0;
+    }
+
+    .details {
+      margin: 15px 0;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .payment-btn {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+
+    .payment-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <div class="price">$1.20<span style="font-size:16px;">/pic</span></div>
+    <div class="details">10 Photos included<br>5 Edited Photo's</div>
+    <a href="https://your-payment-link.com" target="_blank" class="payment-btn">Continue to Payment</a>
+  </div>
+
+</body>
+
+</html>
