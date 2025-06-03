@@ -49,6 +49,3 @@ Visit the hosted project here:
 Harshal Lathiya  
 BCA Student | Web Developer | Photographer  
 
----
-
-Feel free to customize or expand this README based on your needs! Would you like me to help you generate it as a file?
