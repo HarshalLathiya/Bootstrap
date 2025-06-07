@@ -44,7 +44,7 @@ My_web_framework/
 ## Live Demo
 Visit the hosted project here:  
 [https://harshallathiya.github.io/Bootstrap/]([https://harshallathiya.github.io/Bootstrap/My_web_framework/my_website.html])
-
+👉 [Click here to view it on GitHub Pages](https://harshallathiya.github.io/qr-code-project/bqr.html)
 ## Author
 Harshal Lathiya  
 BCA Student | Web Developer | Photographer  
