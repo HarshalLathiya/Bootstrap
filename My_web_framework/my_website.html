@@ -93,21 +93,21 @@
                 </div>
                 <div class="col-lg-6">
                     <h1 class="display-5 fw-bold lh-1 mb-3 text-shadow">Harshal Lathiya.</h1>
-                    <h6 class=" text-shadow">
+                    <h6">
                         "Welcome! I'm a passionate photographer specializing in captivating flower, natural view, and
                         wildlife
                         photography. Explore my portfolio to experience the beauty through my lens."
-                    </h6>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-3">
-                        <button type="button" class="btn btn-light btn-lg px-4 me-md-2"
-                            onclick="window.location.href='Contact_Form.html'">
-                            📧 Contact Me
-                        </button>
-                        <button type="button" class="btn btn-outline-light btn-lg px-4"
-                            onclick="window.location.href='devices.html'">
-                            💻 Devices
-                        </button>
-                    </div>
+                        </h6>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-3">
+                            <button type="button" class="btn btn-light btn-lg px-4 me-md-2"
+                                onclick="window.location.href='Contact_Form.html'">
+                                📧 Contact Me
+                            </button>
+                            <button type="button" class="btn btn-outline-light btn-lg px-4"
+                                onclick="window.location.href='devices.html'">
+                                💻 Devices
+                            </button>
+                        </div>
                 </div>
             </div>
         </div>
@@ -143,10 +143,9 @@
             </div>
         </div>
     </section>
-
     <!-- Pricing -->
     <section id="pricing" class="py-5 bg-light">
-        <div class="container">
+        <div class="container overflow-hidden">
             <div class="text-center mb-5">
                 <h2 class="display-4 fw-normal">Unlock Full Access to All Photos</h2>
                 <p class="text-muted">
@@ -154,14 +153,15 @@
                     categories.
                 </p>
             </div>
-            <div class="d-flex flex-nowrap justify-content-center" id="pricing-row">
+            <!-- Responsive Grid Layout -->
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
                 <!-- Basic Plan -->
                 <div class="col">
-                    <div class="card border-secondary">
-                        <div class="card-header text-bg-light">
+                    <div class="card h-100">
+                        <div class="card-header text-bg-secondary">
                             <h4 class="my-0 fw-normal">Basic</h4>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h1 class="card-title pricing-card-title">$0.99 <small class="text-muted">/image</small>
                             </h1>
                             <ul class="list-unstyled mt-3 mb-4">
@@ -170,18 +170,19 @@
                                 <li>Watermark-Free</li>
                                 <li><del>Premium Images</del></li>
                             </ul>
-                            <button class="w-100 btn btn-outline-secondary"
+                            <button class="mt-auto w-100 btn btn-outline-secondary"
                                 onclick="window.location.href='Checkout_Card.html?plan=basic'">Choose Basic</button>
                         </div>
                     </div>
                 </div>
+
                 <!-- Pro Plan -->
                 <div class="col">
-                    <div class="card border-primary">
+                    <div class="card h-100">
                         <div class="card-header text-bg-primary">
                             <h4 class="my-0 fw-normal">Pro</h4>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h1 class="card-title pricing-card-title">$1.49 <small class="text-muted">/image</small>
                             </h1>
                             <ul class="list-unstyled mt-3 mb-4">
@@ -190,18 +191,19 @@
                                 <li>Full Resolution Downloads</li>
                                 <li>Priority Support</li>
                             </ul>
-                            <button class="w-100 btn btn-primary"
+                            <button class="mt-auto w-100 btn btn-outline-primary"
                                 onclick="window.location.href='Checkout_Card.html?plan=pro'">Choose Pro</button>
                         </div>
                     </div>
                 </div>
+
                 <!-- Premium Plan -->
                 <div class="col">
-                    <div class="card border-success">
+                    <div class="card h-100">
                         <div class="card-header text-bg-success">
                             <h4 class="my-0 fw-normal">Premium</h4>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h1 class="card-title pricing-card-title">$2.49 <small class="text-muted">/image</small>
                             </h1>
                             <ul class="list-unstyled mt-3 mb-4">
@@ -210,7 +212,7 @@
                                 <li>Download in 4K Ultra HD</li>
                                 <li>Lifetime Support & Updates</li>
                             </ul>
-                            <button class="w-100 btn btn-success"
+                            <button class="mt-auto w-100 btn btn-outline-success"
                                 onclick="window.location.href='Checkout_Card.html?plan=premium'">Choose Premium</button>
                         </div>
                     </div>
@@ -218,7 +220,6 @@
             </div>
         </div>
     </section>
-
     <!-- Upcoming Features -->
     <section id="upcoming" class="py-5 bg-white">
         <div class="container text-center">
