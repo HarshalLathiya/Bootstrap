@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flower's Photography</title>
+  <link rel="stylesheet" href="image_file.css" />
+</head>
+
+<body>
+  <div class="gallery">
+    <img src="Gallery/Fpic0.jpg" alt="Flower 1" onclick="openModal(event, this.src)" />
+
+    <img src="Gallery/Fpic1.jpg" class="premium-image" alt="Flower 2 (Premium)" onclick="openModal(event, this.src)" />
+
+    <img src="Gallery/Fpic2.jpg" alt="Flower 3" onclick="openModal(event, this.src)" />
+    <img src="Gallery/Fpic3.jpg" alt="Flower 4" onclick="openModal(event, this.src)" />
+
+    <img src="Gallery/Fpic4.jpg" class="premium-image" alt="Flower 5 (Premium)" onclick="openModal(event, this.src)" />
+
+    <img src="Gallery/Fpic5.jpg" alt="Flower 6" onclick="openModal(event, this.src)" />
+    <img src="Gallery/Fpic6.jpg" alt="Flower 7" onclick="openModal(event, this.src)" />
+
+    <img src="Gallery/Fpic7.jpg" class="premium-image" alt="Flower 8 (Premium)" onclick="openModal(event, this.src)" />
+
+    <img src="Gallery/Fpic8.jpg" alt="Flower 9" onclick="openModal(event, this.src)" />
+    <img src="Gallery/Fpic9.jpg" alt="Flower 10" onclick="openModal(event, this.src)" />
+    <img src="Gallery/Fpic10.jpg" alt="Flower 11" onclick="openModal(event, this.src)" />
+  </div>
+
+  <div class="modal" id="imgModal">
+    <a href="#" class="close" onclick="closeModal()">&times;</a>
+    <img id="modalImage" src="" alt="Full view" />
+  </div>
+
+  <script src="image_file_logic.js"></script>
+</body>
+
+</html>

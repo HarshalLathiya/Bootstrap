@@ -5,30 +5,46 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Natural_View Photography</title>
-  <!--CSS FILE ADDED -->
+  <!-- CSS file added -->
   <link rel="stylesheet" href="image_file.css" />
 </head>
 
 <body>
   <div class="gallery">
-    <img src="Gallery/Spic0.jpg" alt="Natural_View 1" onclick="openModal(this.src)" />
-    <img src="Gallery/Spic1.jpg" alt="Natural_View 1" onclick="openModal(this.src)" />
-    <img src="Gallery/Spic2.jpg" alt="Natural_View 2" onclick="openModal(this.src)" />
-    <img src="Gallery/Spic3.jpg" alt="Natural_View 3" onclick="openModal(this.src)" />
-    <img src="Gallery/Spic4.jpg" alt="Natural_View 4" onclick="openModal(this.src)" />
-    <img src="Gallery/Spic5.jpg" alt="Natural_View 5" onclick="openModal(this.src)" />
-    <img src="Gallery/Spic6.jpg" alt="Natural_View 6" onclick="openModal(this.src)" />
-    <img src="Gallery/Spic7.jpg" alt="Natural_View 7" onclick="openModal(this.src)" />
-    <img src="Gallery/Spic8.jpg" alt="Natural_View 8" onclick="openModal(this.src)" />
-    <img src="Gallery/Spic9.jpg" alt="Natural_View 9" onclick="openModal(this.src)" />
-    <img src="Gallery/Spic10.jpg" alt="Natural_View 10" onclick="openModal(this.src)" />
+    <img src="Gallery/Spic1.jpg" alt="Natural_View 1" onclick="openModal(event, this.src)" />
+
+    <div class="premium">
+      <img src="Gallery/Spic0.jpg" class="premium-image" alt="Natural_View 2 (Premium)"
+        onclick="openModal(event, this.src)" />
+    </div>
+
+    <img src="Gallery/Spic2.jpg" alt="Natural_View 3" onclick="openModal(event, this.src)" />
+    <img src="Gallery/Spic4.jpg" alt="Natural_View 4" onclick="openModal(event, this.src)" />
+
+    <div class="premium">
+      <img src="Gallery/Spic3.jpg" class="premium-image" alt="Natural_View 5 (Premium)"
+        onclick="openModal(event, this.src)" />
+    </div>
+
+    <img src="Gallery/Spic5.jpg" alt="Natural_View 6" onclick="openModal(event, this.src)" />
+    <img src="Gallery/Spic7.jpg" alt="Natural_View 7" onclick="openModal(event, this.src)" />
+
+    <div class="premium">
+      <img src="Gallery/Spic6.jpg" class="premium-image" alt="Natural_View 8 (Premium)"
+        onclick="openModal(event, this.src)" />
+    </div>
+
+    <img src="Gallery/Spic8.jpg" alt="Natural_View 9" onclick="openModal(event, this.src)" />
+    <img src="Gallery/Spic9.jpg" alt="Natural_View 10" onclick="openModal(event, this.src)" />
+    <img src="Gallery/Spic10.jpg" alt="Natural_View 11" onclick="openModal(event, this.src)" />
   </div>
 
   <div class="modal" id="imgModal">
-    <span class="close" id="closeButton">&times;</span>
+    <span class="close" id="closeButton" onclick="closeModal()">&times;</span>
     <img id="modalImage" src="" alt="Full view" />
   </div>
-  <!--JS file adde-->
+
+  <!-- JS file added -->
   <script src="image_file_logic.js"></script>
 </body>
 

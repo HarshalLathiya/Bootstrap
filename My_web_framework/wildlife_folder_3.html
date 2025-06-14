@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wildlife Photography</title>
+  <link rel="stylesheet" href="image_file.css" />
+</head>
+
+<body>
+  <div class="gallery">
+    <img src="Gallery/pic0.jpg" alt="Wildlife 1" onclick="openModal(event, this.src)" />
+
+    <div class="premium">
+      <img src="Gallery/pic1.jpg" class="premium-image" alt="Wildlife 2 (Premium)"
+        onclick="openModal(event, this.src)" />
+    </div>
+
+    <img src="Gallery/pic2.jpg" alt="Wildlife 3" onclick="openModal(event, this.src)" />
+
+    <div class="premium">
+      <img src="Gallery/pic3.jpg" class="premium-image" alt="Wildlife 4 (Premium)"
+        onclick="openModal(event, this.src)" />
+    </div>
+
+    <img src="Gallery/pic4.jpg" alt="Wildlife 5" onclick="openModal(event, this.src)" />
+
+    <div class="premium">
+      <img src="Gallery/pic5.jpg" class="premium-image" alt="Wildlife 6 (Premium)"
+        onclick="openModal(event, this.src)" />
+    </div>
+
+    <img src="Gallery/pic7.jpg" alt="Wildlife 7" onclick="openModal(event, this.src)" />
+    <img src="Gallery/pic8.jpg" alt="Wildlife 8" onclick="openModal(event, this.src)" />
+    <img src="Gallery/pic9.jpg" alt="Wildlife 9" onclick="openModal(event, this.src)" />
+    <img src="Gallery/pic10.jpg" alt="Wildlife 10" onclick="openModal(event, this.src)" />
+  </div>
+
+  <div class="modal" id="imgModal">
+    <span class="close" id="closeButton" onclick="closeModal()">&times;</span>
+    <img id="modalImage" src="" alt="Full view" />
+  </div>
+
+  <script src="image_file_logic.js"></script>
+</body>
+
+</html>
