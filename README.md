@@ -47,5 +47,5 @@ Visit the hosted project here:
 
 ## Author
 Harshal Lathiya  
-BCA Student | Web Developer | Photographer  
+BCA Student | Web Developer | Photographer .
 
