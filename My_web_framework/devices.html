@@ -43,6 +43,23 @@
         .card-body h5 {
             font-weight: 600;
         }
+
+        .card-custom img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 10px auto;
+        }
+
+        .card-custom {
+            cursor: pointer;
+        }
+
+        .modal img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 
@@ -59,6 +76,7 @@
         <div class="row justify-content-center g-4">
             <div class="col-md-4">
                 <div class="card card-custom text-center">
+                    <img src="Gallery/200D.webp" alt="Canon EOS 200D" style="width:100px; margin: 10px auto;">
                     <div class="card-body">
                         <h5 class="card-title">Canon EOS 200D</h5>
                         <p class="card-text">A lightweight DSLR with Dual Pixel autofocus for clean portraits and
@@ -68,6 +86,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card card-custom text-center">
+                    <img src="Gallery/90D.jpg" alt="Canon EOS 90D" style="width:100px; margin: 10px auto;">
                     <div class="card-body">
                         <h5 class="card-title">Canon EOS 90D</h5>
                         <p class="card-text">A powerful APS-C DSLR for high-speed action and crystal-clear image
@@ -77,6 +96,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card card-custom text-center">
+                    <img src="Gallery/Mirror_Lens.webp" alt="Mirror Lens" style="width:100px; margin: 10px auto;">
                     <div class="card-body">
                         <h5 class="card-title">Mirror Lens</h5>
                         <p class="card-text">Used for wildlife and astrophotography with a unique circular bokeh effect.
@@ -91,8 +111,9 @@
         <div class="row justify-content-center g-4">
             <div class="col-md-4">
                 <div class="card card-custom text-center">
+                    <img src="Gallery/Nothing_3APro.png" alt="Nothing 3A Pro" style="width:100px; margin: 10px auto;">
                     <div class="card-body">
-                        <h5 class="card-title">iPhone 14 Plus</h5>
+                        <h5 class="card-title">Nothing 3A Pro</h5>
                         <p class="card-text">Great for low light and cinematic videos with its powerful image processor.
                         </p>
                     </div>
@@ -100,6 +121,8 @@
             </div>
             <div class="col-md-4">
                 <div class="card card-custom text-center">
+                    <img src="Gallery/Redmi_note_10Pro.jpg" alt="Redmi Note 10 Pro"
+                        style="width:100px; margin: 10px auto;">
                     <div class="card-body">
                         <h5 class="card-title">Redmi Note 10 Pro</h5>
                         <p class="card-text">Mid-range phone with a 108MP sensor ideal for crisp, detailed photos.</p>
@@ -108,6 +131,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card card-custom text-center">
+                    <img src="Gallery/oneplus11r.png" alt="OnePlus 11R" style="width:100px; margin: 10px auto;">
                     <div class="card-body">
                         <h5 class="card-title">OnePlus 11R</h5>
                         <p class="card-text">Flagship performance with ultra-fast shutter speed and AI enhancements.</p>
@@ -120,6 +144,39 @@
     <footer class="text-center py-4 bg-light">
         <p class="mb-0">© 2025 Harshal Lathiya. All rights reserved.</p>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Device Image</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="" alt="Device Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const cards = document.querySelectorAll('.card-custom');
+            const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+            const modalImage = document.getElementById('modalImage');
+
+            cards.forEach(card => {
+                card.addEventListener('click', function () {
+                    const img = this.querySelector('img');
+                    modalImage.src = img.src;
+                    modalImage.alt = img.alt;
+                    modal.show();
+                });
+            });
+        });
+    </script>
 
 </body>
 

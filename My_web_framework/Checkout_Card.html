@@ -66,28 +66,30 @@
     <h2 id="planTitle">Selected Plan</h2>
     <div class="price" id="planPrice">$--</div>
     <div class="details" id="planDetails">Loading...</div>
-    <a id="paymentLink" href="#" class="payment-btn" target="_blank">Continue to Payment</a>
+    <img id="qrCode" src="" alt="UPI QR Code" style="display:block; margin: 20px auto; width: 150px; height: 150px;">
+    <div id="paymentNote" style="display:block; margin: 10px 0; font-size: 14px; color: #777;">Scan QR code to pay via
+      UPI</div>
   </div>
 
   <script>
     const plans = {
       basic: {
         name: "Basic Plan",
-        price: "$0.99/pic",
-        details: "Access to standard images only<br>Download in HD<br>No premium access",
-        link: "https://your-payment-link.com/basic"
+        price: "$0.99 per image",
+        details: "✓ Access to All Standard Images<br>✓ Download in HD<br>✓ Watermark-Free<br>✓ Personal Use License<br>✗ Premium Images<br>✗ Priority Support",
+        amount: 0.99
       },
       pro: {
         name: "Pro Plan",
-        price: "$1.49/pic",
-        details: "Includes 5 premium image unlocks<br>Full HD resolution<br>Priority support",
-        link: "https://your-payment-link.com/pro"
+        price: "$14.99/month",
+        details: "✓ Everything in Basic<br>✓ 10 Premium Downloads Included<br>✓ Extra Premium at $1.49/image<br>✓ Full Resolution Downloads<br>✓ Commercial Use License<br>✓ Priority Support",
+        amount: 14.99
       },
       premium: {
         name: "Premium Plan",
-        price: "$2.49/pic",
-        details: "Unlimited premium access<br>All image categories<br>4K Ultra HD + support",
-        link: "https://your-payment-link.com/premium"
+        price: "$49.99/month",
+        details: "✓ Unlimited Premium Access<br>✓ All Categories Included<br>✓ Download in 4K Ultra HD<br>✓ Extended Commercial Use<br>✓ Lifetime Priority Support<br>✓ Exclusive Content Updates",
+        amount: 49.99
       }
     };
 
@@ -99,7 +101,11 @@
     document.getElementById("planTitle").textContent = plan.name;
     document.getElementById("planPrice").textContent = plan.price;
     document.getElementById("planDetails").innerHTML = plan.details;
-    document.getElementById("paymentLink").href = plan.link;
+
+    // Generate UPI QR code
+    const upiUri = `upi://pay?pa=9737612352@ptsbi&pn=Harshal%20Lathiya&am=${plan.amount}&cu=INR`;
+    const qrSrc = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(upiUri)}`;
+    document.getElementById("qrCode").src = qrSrc;
   </script>
 
 </body>

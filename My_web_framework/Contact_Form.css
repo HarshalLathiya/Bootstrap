@@ -1,82 +1,132 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     margin: 0;
-    padding: 0;
-    background: #111; /* fallback background */
-  }
-  
-  .main-container {
-    width: 400px;
-    padding: 30px;
-    border-radius: 0.75rem;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    color: white;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 20px;
     background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 15px rgba(255, 76, 104, 0.7);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     animation: gradient-animation 18s ease infinite;
     background-size: 180% 180%;
     color: white;
-  }
-  
-  .heading {
+}
+
+.heading {
     text-align: center;
     color: white;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     font-weight: 700;
-    font-size: 2rem;
-    text-shadow: 0 0 5px rgba(255, 76, 104, 0.7);
-  }
-  
-  .lable {
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px rgba(255, 76, 104, 0.7);
+}
+
+.subheading {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.label {
     color: white;
     font-weight: 600;
-    display: block;
     margin-bottom: 8px;
-  }
-  
-  .input {
+}
+
+.input {
     width: 100%;
-    padding: 12px;
-    border-radius: 0.75rem;
-    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     outline: none;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1rem;
-    margin-bottom: 25px;
     background: rgba(255, 255, 255, 0.2);
     color: white;
-    box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.2);
-    transition: background 0.3s ease;
-  }
-  
-  .input::placeholder {
-    color: #ffd6dc;
-  }
-  
-  .input:focus {
-    background: rgba(255, 255, 255, 0.4);
-  }
-  
-  .button {
-    width: 50%;
-    padding: 12px;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 76, 104, 0.7);
+    box-shadow: 0 0 0 3px rgba(255, 76, 104, 0.3);
+}
+
+.button {
+    padding: 15px 30px;
     font-size: 1.1rem;
     font-weight: 700;
-    border-radius: 0.75rem;
+    border-radius: 10px;
     border: none;
     cursor: pointer;
-    background: linear-gradient(300deg, #00bfff, #ff4c68);
+    background: linear-gradient(45deg, #00bfff, #ff4c68);
     color: white;
-    transition: background 0.4s ease;
-    display: block;
-    margin: 0 auto;
-    box-shadow: 0 0 12px rgba(255, 76, 104, 0.7);
-  }
-  
-  .button:hover {
-    background: linear-gradient(300deg, #ff4c68, #00bfff);
-  }
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 76, 104, 0.5);
+}
+
+.button:hover {
+    background: linear-gradient(45deg, #ff4c68, #00bfff);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 76, 104, 0.7);
+}
+
+.button:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 30px 20px;
+        margin: 10px;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .input {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    .button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        padding: 20px 15px;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+    }
+
+    .subheading {
+        font-size: 1rem;
+    }
+}
   
