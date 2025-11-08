@@ -20,22 +20,6 @@ This project is a responsive, modular website built using **Bootstrap 5**, HTML,
 - JavaScript
 - Bootstrap 5
 
-## Project Structure
-My_web_framework/
-├── Gallery/ # Image gallery files
-├── Animals_folder1.html # Animal themed page
-├── Checkout_Card.html # Checkout card UI page
-├── Contact_Form.css # Stylesheet for Contact Form
-├── Contact_Form.html # Contact Form HTML page
-├── Flowers_folder3.html # Flower themed page
-├── image_file.css # Custom CSS for images
-├── image_file_logic.js # JavaScript for image interactions
-├── my_website.html # Main or additional HTML page
-├── style.css # Main CSS stylesheet
-└── Sunset_folder2.html # Sunset themed page
-
-
-
 ## How to Use
 1. Clone or download this repository.
 2. Open any `.html` files in a modern web browser.
