@@ -1,4 +1,4 @@
-# My Web Framework with Bootstrap
+# My Web Framework with Bootstrap.
 
 ## Overview
 This project is a responsive, modular website built using **Bootstrap 5**, HTML, CSS, and JavaScript. It demonstrates modern web design techniques and provides reusable UI components such as forms, galleries, and themed sections.
